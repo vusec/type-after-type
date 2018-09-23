@@ -1,6 +1,6 @@
 if [ -f "$PATHSPEC/shrc" ]; then
 	echo "using existing SPEC CPU2006 installation in $PATHSPEC"
-elif [ -f "$PATHSPECCD/shrc" ]
+elif [ -f "$PATHSPECCD/shrc" ]; then
 	echo "installing SPEC CPU2006 to $PATHSPEC"
 	cd "$PATHSPECCD"
 	run ./install.sh -f -d "$PATHSPEC"

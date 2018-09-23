@@ -11,7 +11,9 @@ to be able to perform the setup.
 We also assume that you have a copy of SPEC CPU2006 installed in $HOME/cpu2006.
 If your SPEC install is located somewhere else, adjust the value of PATHSPEC
 accordingly. If you do not have a copy of SPEC CPU2006, set the environment
-variable BUILD_SPEC to 0.
+variable BUILD_SPEC to 0. If you want the program to use a new, separate
+installation of SPEC CPU2006, set PATHSPECCD to the location of your
+SPEC CPU2006 installation CD-ROM instead.
 
 If you want to build Firefox, you will need to install the Firefox build
 prerequisites beforehand. Instructions are found here:
@@ -22,7 +24,8 @@ If you do not want to build Firefox, set BUILD_FIREFOX=0.
 
 Follow the following instructions:
 
-    sudo apt-get install autoconf bison build-essential git libtool libtool-bin
+    sudo apt-get install autoconf bison build-essential libtool libtool-bin
+    sudo apt-get install git subversion
     git clone https://github.com/vusec/type-after-type.git
     cd type-after-type
     PATHSPEC="$HOME/cpu2006" ./autosetup.sh
