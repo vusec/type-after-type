@@ -153,7 +153,7 @@ def processfile(path):
 		return
 
 	memuse = processfile_memuse(path)
-	elif target == "spec-cpu2006":
+	if target == "spec-cpu2006":
 		processfile_speccpu2006(path, instance, nodename, memuse)
 	else:
 		sys.stderr.write("target %s not supported in log file %s\n" % (target, path))

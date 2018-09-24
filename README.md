@@ -64,8 +64,8 @@ To run the microbenchmarks, type:
 
 'tat-both' can be replaced with any of the other configurations.
 
-'benchmarks' can be set to one or more of the following to run a subset
-of SPPEC CPU2006:
+'benchmarks' can be set to one or more of the following SPEC CPU2006 benchmarks
+to be executed:
 
 * 400.perlbench
 * 401.bzip2
