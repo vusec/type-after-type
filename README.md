@@ -25,6 +25,10 @@ If you do not want to build Firefox, set BUILD_FIREFOX=0.
 Follow the following instructions:
 
     sudo apt-get install autoconf bison build-essential libtool libtool-bin
+    sudo apt-get install libreadline-gplv2-dev libncursesw5-dev libssl-dev libsqlite3-dev tk-dev libgdm-dev libc6-dev libbz2-dev
+    sudo apt-get install python
+    sudo apt-get install libgtk-3-dev libgtk2.0-dev libgtk2.0-common libgconf2-dev libpulse-dev libdbus-glib-1-dev libasound2-dev
+    sudo apt-get install wget time unzip zip yasm autoconf2.13
     sudo apt-get install git subversion
     git clone https://github.com/vusec/type-after-type.git
     cd type-after-type
